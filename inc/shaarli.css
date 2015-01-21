@@ -445,11 +445,8 @@ a {color:#000!important;text-decoration:none!important;}
 	border-radius: 5px 5px 5px 5px;
 	margin:3px;
 }
-.searchform,.tagfilter  { display:block !important; margin:0px !important; padding:0px !important; width:100% !important; }
-.searchform input,.tagfilter input  { margin:0px !important; padding:0px !important; display:inline !important; }
-.tagfilter input.bigbutton,.searchform input.bigbutton,.addform input.bigbutton{  width:30%; font-size:smaller;}
-#searchform_value { width:70% !important; }
-#tagfilter_value { width:70% !important; }
+.searchform input,.tagfilter input,.addform input  { margin:0px !important; padding:0px !important; display:inline !important; width:14% !important; }
+.tagfilter input.bigbutton,.searchform input.bigbutton,.addform input.bigbutton{  width:13% !important; font-size:smaller;}
 div.qrcode { position:relative; float:left; top:-10px; left:0px; }
 #paging_privatelinks { float;none; }
 #paging_linksperpage { float:none; margin-bottom:10px; font-size:smaller;}
