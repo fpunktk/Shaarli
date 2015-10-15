@@ -23,9 +23,9 @@ if (date_default_timezone_get() == '') {
 }
 
 // -----------------------------------------------------------------------------------------------
-// Hardcoded parameter (These parameters can be overwritten by editing the file /data/config.php)
+// Hardcoded parameter (These parameters can be overwritten by editing the file /$DATADIR/config.php)
 // You should not touch any code below (or at your own risks!)
-$GLOBALS['config']['DATADIR'] = 'data'; // Data subdirectory
+$GLOBALS['config']['DATADIR'] = 'data.inc'; // Data subdirectory
 $GLOBALS['config']['CONFIG_FILE'] = $GLOBALS['config']['DATADIR'].'/config.php'; // Configuration file (user login/password)
 $GLOBALS['config']['DATASTORE'] = $GLOBALS['config']['DATADIR'].'/datastore.php'; // Data storage file.
 $GLOBALS['config']['LINKS_PER_PAGE'] = 20; // Default links per page.
@@ -67,14 +67,14 @@ if (is_file($GLOBALS['config']['CONFIG_FILE'])) {
 }
 
 // Shaarli library
-require_once 'application/Cache.php';
-require_once 'application/CachedPage.php';
-require_once 'application/HttpUtils.php';
-require_once 'application/LinkDB.php';
-require_once 'application/TimeZone.php';
-require_once 'application/Url.php';
-require_once 'application/Utils.php';
-require_once 'application/Config.php';
+require_once 'application.inc/Cache.php';
+require_once 'application.inc/CachedPage.php';
+require_once 'application.inc/HttpUtils.php';
+require_once 'application.inc/LinkDB.php';
+require_once 'application.inc/TimeZone.php';
+require_once 'application.inc/Url.php';
+require_once 'application.inc/Utils.php';
+require_once 'application.inc/Config.php';
 
 // Ensure the PHP version is supported
 try {
