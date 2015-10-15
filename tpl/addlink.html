@@ -3,13 +3,8 @@
 <head>{include="includes"}</head>
 <body onload="document.addform.post.focus();">
 <div id="pageheader">
-	{include="page.header"}
-	<div id="headerform">
-		<form method="GET" action="" name="addform" class="addform">
-			<input type="text" name="post" class="linkurl">
-			<input type="submit" value="Add link" class="bigbutton">
-		</form>
-	</div>
+    {include="page.header"}
+    {include="addlink.headerform"}
 </div>
 {include="page.footer"}
 </body>
